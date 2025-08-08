@@ -13,6 +13,7 @@ See examples/sweep_weight_factors.ipynb for a parameter study.
 ## API/function usage in python
 
 from tmygen import generate_tmy
+
 df = generate_tmy("multi_year.csv", "weights.csv")
 	
 License
@@ -27,4 +28,5 @@ pip install -e .
 tmygen --weather ./examples/city_1990-2020.csv \
        --weights ./examples/weight_factors.csv \
        --out ./outputs/tartu_tmy.csv```
+
 
