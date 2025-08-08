@@ -10,16 +10,16 @@ Traditional TMY builders are very old. Newer versions weight climate variables s
 
 See examples/sweep_weight_factors.ipynb for a parameter study.
 
-## API/function usage
-```python
+## API/function usage in python
 
-	from tmygen import generate_tmy
-	df = generate_tmy("multi_year.csv", "weights.csv")```
+from tmygen import generate_tmy
+df = generate_tmy("multi_year.csv", "weights.csv")
 	
 License
 MIT. The implementation draws on concepts from ISO 15927-4,
 
 but contains no copyrighted content from the standard.
+
 ## Quick-start
 
 ```bash
@@ -27,3 +27,4 @@ pip install -e .
 tmygen --weather ./examples/city_1990-2020.csv \
        --weights ./examples/weight_factors.csv \
        --out ./outputs/tartu_tmy.csv```
+
