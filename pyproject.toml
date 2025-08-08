@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tmygen"
+version = "0.1.0"
+description = "Simulation-based Typical Meteorological Year generator."
+authors = [{name = "YOUR NAME", email = "you@example.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "click>=8.1"
+]
+
+[project.scripts]
+tmygen = "tmygen.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["tmygen"]
