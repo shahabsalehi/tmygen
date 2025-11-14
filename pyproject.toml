@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "tmygen"
 version = "0.1.0"
 description = "Simulation-based Typical Meteorological Year generator."
-authors = [{name = "YOUR NAME", email = "you@example.com"}]
+authors = [{name = "Shahab Salehi", email = "shahab.salehi@taltech.ee"}]
 license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.9"
@@ -21,3 +21,4 @@ tmygen = "tmygen.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["tmygen"]
+
